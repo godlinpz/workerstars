@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Worker Demo</title>
+    <style>
+        #floater
+        {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: black;
+        }
+        .inp
+        {
+            position: fixed;
+            z-index: 10;
+            background-color: #FFAAAA;
+            width: 300px;
+            left: 10;
+            top: 10;
+        }
+        #cursor
+        {
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+            border-radius: 50%;
+            position: fixed;
+            z-index: 100;
+        }
+    </style>
+    <script src="init.js"></script>
+    <!-- <script src="initNoWorker.js"></script> -->
+</head>
+<body>
+    <canvas id="floater"></canvas>
+    <!-- <input type="text" class="inp" value="TEST"> -->
+    <div id="cursor"></div>
+    <!-- <input type="button" class="inp" value="TEST"> -->
+</body>
+</html>
